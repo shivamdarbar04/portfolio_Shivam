@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			height: 100%;
+			/* Text color */
+			font-size: 24px;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding: 100px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: rgb(192, 192, 192);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 0;
+		}
+
+		nav ul {
+			list-style: none;
+			text-align: center;
+		}
+
+		nav ul li {
+			display: inline;
+			margin: 0 20px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+		section {
+			margin-top: 80px;
+			padding: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a class="text-dark" href="/">Home</a></li>
+				<li><a class="text-dark" href="/about">About</a></li>
+				<li><a class="text-dark" href="/education">Education</a></li>
+				<li><a class="text-dark" href="/skills">Skills</a></li>
+				<li><a class="text-dark" href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Navbar -->
+	<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Education</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    </div>
+</nav>
+-->
+	<!-- Education Details Section -->
+	<section class=" bg-dark education-details py-5">
+		<div class="container">
+			<h1 class="text-center text-info mb-4">My Education</h1>
+
+			<!-- Education Timeline -->
+			<ul class="timeline">
+				<!-- Add your education details here -->
+				<li>
+					<div class="timeline-badge text-white"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title text-white">Bachelor's Degree</h4>
+							<p><small class="text-white">Year: 2022 - 2025</small></p>
+						</div>
+						<div class="timeline-body">
+							<p class="text-white">Course: BCom</p>
+							<p class="text-white">College: SJHS Commerce and Science College, Indore</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge text-white mt-5"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title text-white">Higher Secondry Education</h4>
+							<p><small class="text-white">Year: 2022 </small></p>
+
+						</div>
+						<div class="timeline-body">
+							<p class="text-white">Course: Commerce</p>
+							<p class="text-white">School: S.B.S. Convent school Ashta, Sehore, Madhya Pradesh</p>
+						</div>
+					</div>
+
+					<div class="timeline-badge text-white mt-5"></div>
+						<div class="timeline-body">
+							<h4 class="text-white">Course: Java</h4>
+							<p class="text-white">Institute: Universal Informatics Indore </p>
+						</div>
+					</div>
+
+		</div>
+		</li>
+
+		</ul>
+		</div>
+	</section>
+
+
+
+	<!-- Bootstrap Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
