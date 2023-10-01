@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
->
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,30 @@
 			background-blend-mode: darken;
 			height: 100vh;
 			position: relative;
+		}
+
+.contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000000;
+        }
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: rgb(192, 192, 192);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 0;
 		}
 
 		.text {
@@ -50,7 +74,7 @@
 			padding: 20px 0;
 		}
 
-		 nav ul {
+		nav ul {
 			list-style: none;
 			text-align: center;
 		}
@@ -71,6 +95,8 @@
 			padding: 20px;
 		}
 
+
+
 		.AM {
 			font-weight: bold;
 			color: rgb(0, 255, 64);
@@ -84,40 +110,209 @@
 </head>
 
 <body>
-	<header>
-
-		<nav>
-			<ul>
-				<li><a class="text-dark" href="/">Home</a></li>
-				<li><a class="text-dark" href="/about">About</a></li>
-				<li><a class="text-dark" href="/education">Education</a></li>
-				<li><a class="text-dark" href="/skills">Skills</a></li>
-				<li><a class="text-dark" href="/contact">Contact</a></li>
-
-			</ul>
-		</nav>
 
 
-		<div class="col background-image">
-			<div class="text">
-				<div class="text">
-					<span class="AM fst-italic">Hi I AM</span>
-					<h1 class="fst-italic">Shivam Thakur</h1>
-					<H1 class="flstack">Full-Stack Web Developer</H1>
-
-					<a href="education"><button type="button" class="btn btn-outline-info text-white mt-5 ">More About Me</button></a>
-					<a href="contact"><button type="button" class="btn btn-outline-info text-white mt-5 ml-3">Hire me</button></a>
-
-				</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" style=color:aqua; href="/">
+				<h2>Portfolio</h2>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					 <li class="nav-item">
+						<a class="nav-link" href="#about">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</nav>
+	<div class="col background-image" id="home">
+		<div class="text">
+			<div class="text">
+				<span class="AM fst-italic">Hi I AM</span>
+				<h1 class="fst-italic">Shivam Thakur</h1>
+				<H1 class="flstack">Full-Stack Web Developer</H1>
 
-	</header>
-	
-	<section id="about" class="about">
-		<h1>Hello friends</h1>
-		
+				<a href="#Education"><button type="button" class="btn btn-outline-info text-white mt-5 ">More About
+						Me</button></a>
+				<a href="#contact"><button type="button" class="btn btn-outline-info text-white mt-5 ml-3">Hire
+						me</button></a>
+
+			</div>
+		</div>
+	</div>
 	</section>
-	</body>
+
+	
+	<section class=" bg-dark education-details p-5" id="Education">
+		<div class="container">
+			<h1 class="text-center text-info mb-4">My Education</h1>
+
+			<!-- Education Timeline -->
+			<ul class="timeline">
+				<!-- Add your education details here -->
+				<li>
+					<div class="timeline-badge text-white"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title text-white">Bachelor's Degree</h4>
+							<p><small class="text-white">Year: 2022 - 2025</small></p>
+						</div>
+						<div class="timeline-body">
+							<p class="text-white">Course: BCom</p>
+							<p class="text-white">College: SJHS Commerce and Science College, Indore</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge text-white mt-5"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title text-white">Higher Secondry Education</h4>
+							<p><small class="text-white">Year: 2022 </small></p>
+
+						</div>
+						<div class="timeline-body">
+							<p class="text-white">Course: Commerce</p>
+							<p class="text-white">School: S.B.S. Convent school Ashta, Sehore, Madhya Pradesh</p>
+						</div>
+					</div>
+
+					<div class="timeline-badge text-white mt-5"></div>
+					<div class="timeline-body">
+						<h4 class="text-white">Course: Java</h4>
+						<p class="text-white">Institute: Universal Informatics Indore </p>
+					</div>
+					
+					<div class="timeline-body">
+						<h4 class="text-white">Contact Details</h4>
+						<p class="text-white">Email: shivamdarbar04@gmail.com or 9301438523 </p>
+					</div>
+		</div>
+
+		</div>
+		</li>
+
+		</ul>
+		</div>
+	</section>
+
+	<section class="" id="skills">
+
+		<div class="container-fluid">
+			<h1 class="ml-4 text-dark text-center">Skills</h1>
+			<div class="row container-fluid">
+				<div class="card border-0 container-fluid " style="width:30rem;">
+					<h3 class="text-dark mt-5">Java</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Hibernate</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Spring Mvc</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Bootsrap</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Spring Boot</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Html</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5">Css</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="card border-0 container-fluid" style="width:30rem;">
+					<h3 class="text-dark mt-5 ">Web Development</h3>
+					<div class="progress" style="height: 8px;">
+						<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+			</div>
+			
+
+		</div>
+		</div>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="/contact" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	</section>
+
+
+</body>
 
 </html>
